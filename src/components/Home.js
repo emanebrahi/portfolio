@@ -13,7 +13,7 @@ function Home() {
     <div>
       <FirstSection />  
       <Skills />
-      {/* Render Projects component with nested routes */}
+      {/* <Projects/> */}
       <Outlet />
       <SecondSectionProject/>
       <SeeMyProjects/>

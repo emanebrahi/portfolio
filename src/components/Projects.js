@@ -12,13 +12,14 @@ function Projects() {
         
         <div className='row'>
           <nav className='d-flex justify-content-center'>
-            <Link to="firstSection" className='border border-white first-btn'>1st section</Link>
-            <Link to="secondSection" className='border border-white second-btn'>2nd section</Link>
-            <Link to="thirdSection" className='border border-white third-btn'>3rd section</Link>
+            <Link to="/projects/firstSection" className='border border-white first-btn'>1st section</Link>
+            <Link to="/projects/secondSection" className='border border-white second-btn'>2nd section</Link>
+            <Link to="/projects/thirdSection" className='border border-white third-btn'>3rd section</Link>
           </nav>
         </div>
+        <Outlet/>
       </div>
-  <Outlet/>
+  
     </div>
   );
 }
