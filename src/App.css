@@ -204,7 +204,7 @@ color: #0e171a;
   margin-top: 300px;
 }
 .first-btn{
-   border-top-left-radius: 20px;
+   border-top-left-radius: 20px !important;
    border-bottom-left-radius: 20px;
 }
 .third-btn{
@@ -311,7 +311,7 @@ input:focus label{
 }
 .see-my-projects-container {
   position: absolute; 
-  top: -80px; 
+  top: 520px; 
   left: 50%;
   transform: translateX(-50%);
   background-color: #bdccc2;
@@ -319,16 +319,13 @@ input:focus label{
   border-radius: 30px;
   z-index: 50; 
   width: 90%; 
-  max-width: 600px; 
+  /* max-width: 600px;  */
 }
-
-
 .see-my-projects-form {
   display: flex;
   justify-content: space-between;
   position: relative;
 }
-
 .see-my-projects-form label {
   color: black !important;
 }
@@ -336,7 +333,7 @@ input:focus label{
 .submit-btn {
   padding: 10px 30px !important;
   border: 1px solid #3e243b;
-  border-radius: 20px;
+  border-radius: 20px !important;
   color: white !important;
   position: absolute;
   right: 10px;
@@ -426,7 +423,11 @@ input:focus label{
     font-size: 1rem;
   }
   /* see my projects section ===============================================*/
+  .projects-container{
+    margin-top: 200px;
+  }
   .see-my-projects-container {
+    top: 920px;
     width: 95%; 
     padding: 10px 0; 
     bottom: 10px;

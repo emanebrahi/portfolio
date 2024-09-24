@@ -65,4 +65,4 @@ function FirstSection() {
   )
 }
 
-export default FirstSection
+export default React.memo(FirstSection)

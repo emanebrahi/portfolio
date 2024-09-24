@@ -30,4 +30,4 @@ function SeeMyProjects() {
   )
 }
 
-export default SeeMyProjects
+export default React.memo(SeeMyProjects)

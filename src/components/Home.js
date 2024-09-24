@@ -1,6 +1,4 @@
 import React from 'react';
-import NavComponent from './NavComponent';
-import { Outlet } from 'react-router-dom';
 import FirstSection from './FirstSection';
 import Skills from './Skills';
 import Projects from './Projects';
@@ -13,13 +11,12 @@ function Home() {
     <div>
       <FirstSection />  
       <Skills />
-      {/* <Projects/> */}
-      <Outlet />
+      <Projects/>
+      <SeeMyProjects />
       <SecondSectionProject/>
-      <SeeMyProjects/>
       <Footer />
     </div>
   );
 }
 
-export default Home;
+export default React.memo(Home);

@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import formImg from "../images/form-img.png";
+import Aos from "aos";
 
 function SecondSectionProject() {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+    Aos.refresh(); 
+}, []);
   return (
-    <div>
+    <div id="second-section-projects">
       <div className="form-container">
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
-              <img src={formImg} className="w-100 overflow-hidden mt-5" />
+              <img src={formImg} data-aos="fade-up" className="w-100 overflow-hidden mt-5"  />
             </div>
 
             <div className="col-lg-6">
@@ -84,4 +89,4 @@ function SecondSectionProject() {
   );
 }
 
-export default SecondSectionProject;
+export default React.memo(SecondSectionProject);

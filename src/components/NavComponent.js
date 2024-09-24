@@ -51,4 +51,4 @@ function NavComponent() {
   );
 }
 
-export default NavComponent;
+export default React.memo(NavComponent);
